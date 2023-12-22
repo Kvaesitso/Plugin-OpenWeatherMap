@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Kvaesitso Plugin for OpenWeatherMap</string>
+    <string name="plugin_package_name">OpenWeatherMap integration</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">OpenWeatherMap weather provider</string>
+    <string name="plugin_state_setup_required">Add an OpenWeatherMap API key to use this plugin.</string>
+    <string name="input_api_key">API key</string>
+    <string name="api_key_save_button">Save</string>
+    <string name="api_key_state_saved">API key has been updated successfully.</string>
+    <string name="api_key_state_invalid">The provided API key is not valid.</string>
+    <string name="api_key_state_error">An error occurred, please check your network connection.</string>
+</resources>
