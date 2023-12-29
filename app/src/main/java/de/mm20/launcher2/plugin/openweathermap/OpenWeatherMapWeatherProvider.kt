@@ -205,7 +205,7 @@ class OpenWeatherMapWeatherProvider : WeatherProvider(
     override suspend fun getPluginState(): PluginState {
         val context = context!!
         apiClient.apiKey.first() ?: return PluginState.SetupRequired(
-            Intent(context, SettingsActivity::class.java.javaClass),
+            Intent(context, SettingsActivity::class.java),
             context.getString(R.string.plugin_state_setup_required)
         )
         return PluginState.Ready()
