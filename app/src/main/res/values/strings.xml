@@ -1,8 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Kvaesitso Plugin for OpenWeatherMap</string>
     <string name="plugin_package_name">OpenWeatherMap integration</string>
     <string name="plugin_name">OpenWeatherMap</string>
-    <string name="plugin_description">OpenWeatherMap weather provider</string>
+    <string name="plugin_description">Adds OpenWeatherMap as a weather provider</string>
     <string name="plugin_state_setup_required">Add an OpenWeatherMap API key to use this plugin.</string>
     <string name="input_api_key">API key</string>
     <string name="api_key_save_button">Save</string>
