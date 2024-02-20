@@ -14,7 +14,7 @@ compose = "1.6.1"
 composeCompiler = "1.5.9"
 composeMaterial3 = "1.2.0"
 
-launcherSdk = "1.0.0-alpha03"
+launcherSdk = "1.0.0"
 
 ktor = "2.3.7"
 
