@@ -2,10 +2,6 @@
 
 This plugin adds OpenWeatherMap as a weather provider to Kvaesitso.
 
-> [!IMPORTANT]  
-> Plugins are a preview feature and are currently only available
-> in [Kvaesitso Nightly](https://fdroid.mm20.de/app/de.mm20.launcher2.nightly)
-
 ## License
 
 This plugin is licensed under the Apache License 2.0.
