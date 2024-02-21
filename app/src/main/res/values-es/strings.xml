@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Plugin de Kvaesitso para OpenWeatherMap</string>
+    <string name="plugin_package_name">Integración de OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Agrega OpenWeatherMap como proveedor de clima</string>
+    <string name="plugin_state_setup_required">Agrega una clave API de OpenWeatherMap para usar este plugin.</string>
+    <string name="input_api_key">Clave API</string>
+    <string name="api_key_save_button">Guardar</string>
+    <string name="api_key_state_saved">La clave API ha sido actualizada correctamente.</string>
+    <string name="api_key_state_invalid">La clave API provista no es válida.</string>
+    <string name="api_key_state_error">Ha ocurrido un error, por favor comprueba tu conexión de red.</string>
+</resources>
