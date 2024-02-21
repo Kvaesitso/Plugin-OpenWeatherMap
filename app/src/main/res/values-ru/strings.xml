@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Плагин Kvaesitso для OpenWeatherMap</string>
+    <string name="plugin_description">Добавляет OpenWeatherMap в список поставщиков погоды</string>
+    <string name="api_key_state_saved">API-ключ был успешно обновлён.</string>
+    <string name="plugin_package_name">Интеграция OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Чтобы использовать этот плагин, добавьте API-ключ от OpenWeatherMap.</string>
+    <string name="input_api_key">API-ключ</string>
+    <string name="api_key_save_button">Сохранить</string>
+    <string name="api_key_state_invalid">Предоставленный API-ключ недействителен.</string>
+    <string name="api_key_state_error">Произошла ошибка, проверьте интернет-соединение.</string>
+</resources>
