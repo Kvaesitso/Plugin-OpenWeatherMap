@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="plugin_package_name">OpenWeatherMap integráció</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Adj hozzá egy OpenWeatherMap API-kulcsot a bővítmény használatához.</string>
+    <string name="input_api_key">API kulcs</string>
+    <string name="api_key_save_button">Mentés</string>
+    <string name="api_key_state_saved">Az API-kulcs sikeresen frissült.</string>
+    <string name="api_key_state_invalid">A megadott API-kulcs nem érvényes.</string>
+    <string name="app_name">Kvaesitso bővítmény az OpenWeatherMap-hez</string>
+    <string name="plugin_description">OpenWeatherMap hozzáadása, mint időjárásszolgáltató</string>
+    <string name="api_key_state_error">Hiba történt, kérjük, ellenőrizd a hálózati kapcsolatot.</string>
+</resources>
