@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Kvaesitso Udvidelse til OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Tilføj en OpenWeatherApp API-nøgle for at bruge denne udvidelse.</string>
+    <string name="input_api_key">API-nøgle</string>
+    <string name="api_key_save_button">Gem</string>
+    <string name="api_key_state_saved">API-nøgle blev opdateret.</string>
+    <string name="api_key_state_invalid">Den angivne API-nøgle er ugyldig.</string>
+    <string name="api_key_state_error">En fejl opstod; tjek venligst din internetforbindelse.</string>
+    <string name="plugin_package_name">OpenWeatherMap-integration</string>
+    <string name="plugin_description">Tilføjer OpenWeatherApp som vejr-udbyder</string>
+</resources>
