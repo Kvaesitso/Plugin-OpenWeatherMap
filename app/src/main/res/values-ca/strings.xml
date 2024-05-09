@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Connector Kvaesitso per a OpenWeatherMap</string>
+    <string name="plugin_package_name">Integració OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Afegeix OpenWeatherMap com a proveïdor de dades climatològiques</string>
+    <string name="api_key_state_invalid">La clau API proporcionada no és vàlida.</string>
+    <string name="plugin_state_setup_required">Afegiu una clau API OpenWeatherMap per utilitzar aquest connector.</string>
+    <string name="input_api_key">Clau API</string>
+    <string name="api_key_save_button">Desa</string>
+    <string name="api_key_state_saved">Clau API s\'ha actualitzat correctament.</string>
+    <string name="api_key_state_error">S\'ha produït un error, comproveu la vostra connexió de xarxa.</string>
+</resources>

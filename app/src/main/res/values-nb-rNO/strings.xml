@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kvaesitso-tillegg for OpenWeatherMap</string>
+    <string name="plugin_package_name">OpenWeatherMap-integrasjon</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Legger til OpenWeatherMap som en værvarseltilbyder</string>
+    <string name="plugin_state_setup_required">Legg til en OpenWeatherMap-API-nøkkel for å bruke dette tillegget.</string>
+    <string name="input_api_key">API-nøkkel</string>
+    <string name="api_key_save_button">Lagre</string>
+    <string name="api_key_state_saved">API-nøkkel er oppdatert.</string>
+    <string name="api_key_state_invalid">API-nøkkelen er ikke gyldig.</string>
+    <string name="api_key_state_error">En feil oppstod, sjekk din nettverkstilkobling.</string>
+</resources>

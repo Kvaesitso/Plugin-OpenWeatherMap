@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Doplněk Kvaesitso pro OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Pro použití tohoto doplňku přidejte klíč OpenWeatherMap API.</string>
+    <string name="api_key_state_saved">Klíč API byl úspěšně aktualizován.</string>
+    <string name="plugin_description">Přidá OpenWeatherMap jako poskytovatele počasí</string>
+    <string name="api_key_save_button">Uložit</string>
+    <string name="plugin_package_name">Integrace OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="input_api_key">Klíč API</string>
+    <string name="api_key_state_invalid">Zadaný klíč API je neplatný.</string>
+    <string name="api_key_state_error">Vyskytla se chyba, zkontrolujte prosím své připojení k síti.</string>
+</resources>
