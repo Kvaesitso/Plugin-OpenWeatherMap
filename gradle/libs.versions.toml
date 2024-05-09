@@ -1,5 +1,5 @@
 [versions]
-agp = "8.4.0-alpha10"
+agp = "8.4.0"
 kotlin = "1.9.22"
 
 kotlinSerialization = "1.6.2"
@@ -14,7 +14,7 @@ compose = "1.6.1"
 composeCompiler = "1.5.9"
 composeMaterial3 = "1.2.0"
 
-launcherSdk = "1.0.0"
+launcherSdk = "1.1.1"
 
 ktor = "2.3.7"
 
