@@ -4,4 +4,10 @@
     <string name="plugin_package_name">Integracja OpenWeatherMap</string>
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="plugin_description">Dodaje OpenWeatherMap jako dostawca danych pogodowych</string>
+    <string name="plugin_state_setup_required">Dodaj klucz API OpenWeatherMap, aby korzystać z tej wtyczki.</string>
+    <string name="input_api_key">Klucz API</string>
+    <string name="api_key_state_saved">Klucz API został pomyślnie zaktualizowany.</string>
+    <string name="api_key_state_invalid">Podany klucz API jest nieprawidłowy.</string>
+    <string name="api_key_save_button">Zapisz</string>
+    <string name="api_key_state_error">Wystąpił błąd, sprawdź połączenie sieciowe.</string>
 </resources>
