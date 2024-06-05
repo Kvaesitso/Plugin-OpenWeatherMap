@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="plugin_package_name">OpenWeatherMap-integratie</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Voegt OpenWeatherMap toe als leverancier van weergegevens</string>
+    <string name="app_name">Kvaesitso Plug-in voor OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Voeg een OpenWeatherMap API-sleutel toe om deze plug-in te gebruiken.</string>
+    <string name="input_api_key">API-sleutel</string>
+    <string name="api_key_save_button">Opslaan</string>
+    <string name="api_key_state_saved">API-sleutel is succesvol bijgewerkt.</string>
+    <string name="api_key_state_invalid">De opgegeven API-sleutel is niet geldig.</string>
+    <string name="api_key_state_error">Er is een fout opgetreden, controleer de netwerkverbinding.</string>
+</resources>
