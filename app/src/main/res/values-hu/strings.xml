@@ -2,7 +2,7 @@
 <resources>
     <string name="plugin_package_name">OpenWeatherMap integráció</string>
     <string name="plugin_name">OpenWeatherMap</string>
-    <string name="plugin_state_setup_required">Adj hozzá egy OpenWeatherMap API-kulcsot a bővítmény használatához.</string>
+    <string name="plugin_state_setup_required">Adjon hozzá egy OpenWeatherMap API-kulcsot a bővítmény használatához.</string>
     <string name="input_api_key">API kulcs</string>
     <string name="api_key_save_button">Mentés</string>
     <string name="api_key_state_saved">Az API-kulcs sikeresen frissült.</string>
