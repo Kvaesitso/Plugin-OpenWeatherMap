@@ -11,6 +11,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -130,6 +131,23 @@ class SettingsActivity : AppCompatActivity() {
                             style = MaterialTheme.typography.bodyMedium,
                             modifier = Modifier.padding(top = 8.dp)
                         )
+
+                        Box(
+                            modifier = Modifier
+                                .padding(vertical = 16.dp)
+                                .background(
+                                    MaterialTheme.colorScheme.secondaryContainer,
+                                    MaterialTheme.shapes.medium
+                                )
+                        ) {
+                            Text(
+                                stringResource(R.string.note_api_key),
+                                style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.padding(16.dp),
+                                color = MaterialTheme.colorScheme.onSecondaryContainer,
+                            )
+                        }
+
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()

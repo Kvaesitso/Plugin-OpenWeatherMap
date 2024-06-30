@@ -13,4 +13,5 @@
     <string name="setup_step_n">Step %1$d</string>
     <string name="instruction_register">Register at %1$s to get an API key:</string>
     <string name="instruction_enter_key">Paste the API key below:</string>
+    <string name="note_api_key">Please note that it can take up to 2 hours for your key to be activated.</string>
 </resources>
