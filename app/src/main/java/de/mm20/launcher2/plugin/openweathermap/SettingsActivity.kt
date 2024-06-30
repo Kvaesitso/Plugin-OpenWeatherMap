@@ -37,6 +37,7 @@ import androidx.compose.material3.darkColorScheme
 import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -83,146 +84,159 @@ class SettingsActivity : AppCompatActivity() {
                 }
             }
             MaterialTheme(theme) {
-                Column(
-                    modifier = Modifier
-                        .fillMaxSize()
-                        .background(MaterialTheme.colorScheme.surface)
-                        .systemBarsPadding()
-                        .verticalScroll(rememberScrollState()),
-                    horizontalAlignment = Alignment.Start,
+                CompositionLocalProvider(
+                    LocalContentColor provides MaterialTheme.colorScheme.onSurface
                 ) {
-
                     Column(
                         modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(16.dp),
+                            .fillMaxSize()
+                            .background(MaterialTheme.colorScheme.surface)
+                            .systemBarsPadding()
+                            .verticalScroll(rememberScrollState()),
                         horizontalAlignment = Alignment.Start,
                     ) {
-                        Text(stringResource(R.string.setup_step_n, 1), style = MaterialTheme.typography.titleLarge)
-                        Text(
-                            stringResource(R.string.instruction_register, "OpenWeatherMap"),
-                            style = MaterialTheme.typography.bodyMedium,
-                            modifier = Modifier.padding(top = 8.dp)
-                        )
-                        Text(
-                            "https://home.openweathermap.org/api_keys",
-                            style = MaterialTheme.typography.bodyMedium,
-                            textDecoration = TextDecoration.Underline,
-                            color = MaterialTheme.colorScheme.primary,
-                            modifier = Modifier.padding(top = 8.dp).clickable {
-                                startActivity(Intent(Intent.ACTION_VIEW).apply {
-                                    data = "https://home.openweathermap.org/api_keys".toUri()
-                                })
-                            }
-                        )
-                    }
-
-                    HorizontalDivider()
-
-                    Column(
-                        modifier = Modifier
-                            .fillMaxWidth()
-                            .padding(16.dp),
-                        horizontalAlignment = Alignment.Start,
-                    ) {
-                        Text(stringResource(R.string.setup_step_n, 2), style = MaterialTheme.typography.titleLarge)
-                        Text(
-                            stringResource(R.string.instruction_enter_key),
-                            style = MaterialTheme.typography.bodyMedium,
-                            modifier = Modifier.padding(top = 8.dp)
-                        )
-
-                        Box(
-                            modifier = Modifier
-                                .padding(vertical = 16.dp)
-                                .background(
-                                    MaterialTheme.colorScheme.secondaryContainer,
-                                    MaterialTheme.shapes.medium
-                                )
-                        ) {
-                            Text(
-                                stringResource(R.string.note_api_key),
-                                style = MaterialTheme.typography.bodySmall,
-                                modifier = Modifier.padding(16.dp),
-                                color = MaterialTheme.colorScheme.onSecondaryContainer,
-                            )
-                        }
 
                         Column(
                             modifier = Modifier
                                 .fillMaxWidth()
-                                .padding(vertical = 8.dp),
-                            verticalArrangement = Arrangement.Center,
-                            horizontalAlignment = Alignment.CenterHorizontally,
+                                .padding(16.dp),
+                            horizontalAlignment = Alignment.Start,
                         ) {
-                            OutlinedTextField(
-                                modifier = Modifier.fillMaxWidth(),
-                                enabled = apiKeyState != ApiKeyState.Saving,
-                                value = apiKey,
-                                onValueChange = {
-                                    apiKey = it
-                                    apiKeyState = null
-                                },
-                                label = {
-                                    Text(stringResource(id = R.string.input_api_key))
-                                },
-                                singleLine = true,
-                                supportingText = when (apiKeyState) {
-                                    ApiKeyState.Saved -> {
-                                        { Text(stringResource(R.string.api_key_state_saved)) }
+                            Text(
+                                stringResource(R.string.setup_step_n, 1),
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                            Text(
+                                stringResource(R.string.instruction_register, "OpenWeatherMap"),
+                                style = MaterialTheme.typography.bodyMedium,
+                                modifier = Modifier.padding(top = 8.dp)
+                            )
+                            Text(
+                                "https://home.openweathermap.org/api_keys",
+                                style = MaterialTheme.typography.bodyMedium,
+                                textDecoration = TextDecoration.Underline,
+                                color = MaterialTheme.colorScheme.primary,
+                                modifier = Modifier
+                                    .padding(top = 8.dp)
+                                    .clickable {
+                                        startActivity(Intent(Intent.ACTION_VIEW).apply {
+                                            data =
+                                                "https://home.openweathermap.org/api_keys".toUri()
+                                        })
                                     }
-
-                                    ApiKeyState.Invalid -> {
-                                        { Text(stringResource(R.string.api_key_state_invalid)) }
-                                    }
-
-                                    ApiKeyState.Error -> {
-                                        { Text(stringResource(R.string.api_key_state_error)) }
-                                    }
-
-                                    else -> null
-                                },
-                                isError = apiKeyState == ApiKeyState.Invalid || apiKeyState == ApiKeyState.Error,
-                                trailingIcon = when (apiKeyState) {
-                                    ApiKeyState.Saved -> {
-                                        { Icon(Icons.Rounded.CheckCircle, null) }
-                                    }
-
-                                    ApiKeyState.Invalid -> {
-                                        { Icon(Icons.Rounded.Error, null) }
-                                    }
-
-                                    ApiKeyState.Error -> {
-                                        { Icon(Icons.Rounded.Error, null) }
-                                    }
-
-                                    else -> null
-                                },
                             )
                         }
-                        Button(
-                            enabled = apiKeyState != ApiKeyState.Saving && apiKey.isNotBlank() && apiKey != savedApiKey,
-                            contentPadding = ButtonDefaults.ButtonWithIconContentPadding,
-                            onClick = { saveApiKey(apiKey) },
-                            modifier = Modifier.align(Alignment.End)
+
+                        HorizontalDivider()
+
+                        Column(
+                            modifier = Modifier
+                                .fillMaxWidth()
+                                .padding(16.dp),
+                            horizontalAlignment = Alignment.Start,
                         ) {
-                            if (apiKeyState == ApiKeyState.Saving) {
-                                CircularProgressIndicator(
-                                    modifier = Modifier.size(ButtonDefaults.IconSize),
-                                    color = LocalContentColor.current,
-                                    strokeWidth = 2.dp,
-                                )
-                            } else {
-                                Icon(
-                                    Icons.Rounded.Save,
-                                    null,
-                                    modifier = Modifier.size(ButtonDefaults.IconSize)
+                            Text(
+                                stringResource(R.string.setup_step_n, 2),
+                                style = MaterialTheme.typography.titleLarge
+                            )
+                            Text(
+                                stringResource(R.string.instruction_enter_key),
+                                style = MaterialTheme.typography.bodyMedium,
+                                modifier = Modifier.padding(top = 8.dp)
+                            )
+
+                            Box(
+                                modifier = Modifier
+                                    .padding(vertical = 16.dp)
+                                    .background(
+                                        MaterialTheme.colorScheme.secondaryContainer,
+                                        MaterialTheme.shapes.medium
+                                    )
+                            ) {
+                                Text(
+                                    stringResource(R.string.note_api_key),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    modifier = Modifier.padding(16.dp),
+                                    color = MaterialTheme.colorScheme.onSecondaryContainer,
                                 )
                             }
-                            Text(
-                                text = stringResource(R.string.api_key_save_button),
-                                modifier = Modifier.padding(start = ButtonDefaults.IconSpacing)
-                            )
+
+                            Column(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 8.dp),
+                                verticalArrangement = Arrangement.Center,
+                                horizontalAlignment = Alignment.CenterHorizontally,
+                            ) {
+                                OutlinedTextField(
+                                    modifier = Modifier.fillMaxWidth(),
+                                    enabled = apiKeyState != ApiKeyState.Saving,
+                                    value = apiKey,
+                                    onValueChange = {
+                                        apiKey = it
+                                        apiKeyState = null
+                                    },
+                                    label = {
+                                        Text(stringResource(id = R.string.input_api_key))
+                                    },
+                                    singleLine = true,
+                                    supportingText = when (apiKeyState) {
+                                        ApiKeyState.Saved -> {
+                                            { Text(stringResource(R.string.api_key_state_saved)) }
+                                        }
+
+                                        ApiKeyState.Invalid -> {
+                                            { Text(stringResource(R.string.api_key_state_invalid)) }
+                                        }
+
+                                        ApiKeyState.Error -> {
+                                            { Text(stringResource(R.string.api_key_state_error)) }
+                                        }
+
+                                        else -> null
+                                    },
+                                    isError = apiKeyState == ApiKeyState.Invalid || apiKeyState == ApiKeyState.Error,
+                                    trailingIcon = when (apiKeyState) {
+                                        ApiKeyState.Saved -> {
+                                            { Icon(Icons.Rounded.CheckCircle, null) }
+                                        }
+
+                                        ApiKeyState.Invalid -> {
+                                            { Icon(Icons.Rounded.Error, null) }
+                                        }
+
+                                        ApiKeyState.Error -> {
+                                            { Icon(Icons.Rounded.Error, null) }
+                                        }
+
+                                        else -> null
+                                    },
+                                )
+                            }
+                            Button(
+                                enabled = apiKeyState != ApiKeyState.Saving && apiKey.isNotBlank() && apiKey != savedApiKey,
+                                contentPadding = ButtonDefaults.ButtonWithIconContentPadding,
+                                onClick = { saveApiKey(apiKey) },
+                                modifier = Modifier.align(Alignment.End)
+                            ) {
+                                if (apiKeyState == ApiKeyState.Saving) {
+                                    CircularProgressIndicator(
+                                        modifier = Modifier.size(ButtonDefaults.IconSize),
+                                        color = LocalContentColor.current,
+                                        strokeWidth = 2.dp,
+                                    )
+                                } else {
+                                    Icon(
+                                        Icons.Rounded.Save,
+                                        null,
+                                        modifier = Modifier.size(ButtonDefaults.IconSize)
+                                    )
+                                }
+                                Text(
+                                    text = stringResource(R.string.api_key_save_button),
+                                    modifier = Modifier.padding(start = ButtonDefaults.IconSpacing)
+                                )
+                            }
                         }
                     }
                 }
