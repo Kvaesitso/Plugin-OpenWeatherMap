@@ -1,20 +1,19 @@
 [versions]
-agp = "8.4.0"
-kotlin = "1.9.22"
+agp = "8.4.2"
+kotlin = "2.0.0"
 
 kotlinSerialization = "1.6.2"
 
-coreKtx = "1.12.0"
-appcompat = "1.6.1"
-activity = "1.9.0-alpha03"
-lifecycle = "2.7.0"
-datastore = "1.1.0-beta01"
+coreKtx = "1.13.1"
+appcompat = "1.7.0"
+activity = "1.9.0"
+lifecycle = "2.8.2"
+datastore = "1.1.1"
 
-compose = "1.6.1"
-composeCompiler = "1.5.9"
-composeMaterial3 = "1.2.0"
+compose = "1.6.8"
+composeMaterial3 = "1.3.0-beta04"
 
-launcherSdk = "1.1.1"
+launcherSdk = "2.0.1"
 
 ktor = "2.3.7"
 
@@ -40,4 +39,5 @@ ktor-serialization-json = { group = "io.ktor", name = "ktor-serialization-kotlin
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 
