@@ -10,4 +10,8 @@
     <string name="api_key_state_invalid">La chiave API fornita non è valida.</string>
     <string name="api_key_state_error">Si è verificato un errore, controlla la connessione di rete.</string>
     <string name="api_key_state_saved">La chiave API è stata aggiornata correttamente.</string>
+    <string name="instruction_register">Registrati su %1$s per ottenere una chiave API:</string>
+    <string name="instruction_enter_key">Incolla qui la chiave API:</string>
+    <string name="setup_step_n">Passaggio %1$d</string>
+    <string name="note_api_key">Tieni presente che potrebbero essere necessarie fino a 2 ore per l\'attivazione della chiave.</string>
 </resources>
