@@ -10,4 +10,8 @@
     <string name="api_key_save_button">Сохранить</string>
     <string name="api_key_state_invalid">Предоставленный API-ключ недействителен.</string>
     <string name="api_key_state_error">Произошла ошибка, проверьте интернет-соединение.</string>
+    <string name="setup_step_n">Шаг %1$d</string>
+    <string name="instruction_enter_key">Вставьте API-ключ ниже:</string>
+    <string name="instruction_register">Зарегистрируйтесь на %1$s для получения API-ключа:</string>
+    <string name="note_api_key">Пожалуйста, обратите внимание, что активация ключа может занимать до 2 часов.</string>
 </resources>
