@@ -10,4 +10,8 @@
     <string name="api_key_state_saved">API-Key wurde erfolgreich gespeichert.</string>
     <string name="api_key_state_error">Ein Fehler ist aufgetreten, bitte prüfen Sie Ihre Internetverbindung.</string>
     <string name="api_key_state_invalid">Der angegebene API-Key ist ungültig.</string>
+    <string name="setup_step_n">Schritt %1$d</string>
+    <string name="instruction_register">Registrieren Sie sich unter %1$s, um einen API-Key zu erhalten:</string>
+    <string name="instruction_enter_key">Fügen Sie den API-Key hier ein:</string>
+    <string name="note_api_key">Bitte beachten Sie, dass es bis zu zwei Stunden dauern kann, bis Ihr API-Key freigeschaltet ist.</string>
 </resources>
