@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">Plugin Kvaesitso pentru OpenWeatherMap</string>
+    <string name="plugin_package_name">Integrare OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Adaugă OpenWeatherMap ca un furnizor de vreme</string>
+    <string name="plugin_state_setup_required">Adăugați o cheie API OpenWeatherMap pentru a utiliza acest plugin.</string>
+    <string name="input_api_key">Cheie API</string>
+    <string name="api_key_save_button">Salvați</string>
+    <string name="api_key_state_saved">Cheia API a fost actualizată cu succes.</string>
+    <string name="api_key_state_invalid">Cheia API introdusā nu este validă.</string>
+    <string name="api_key_state_error">A apărut o eroare, vă rugăm verificați conexiunea la Internet.</string>
+    <string name="instruction_register">Înregistrați-vă în %1$s pentru a obține o cheie API:</string>
+    <string name="setup_step_n">Pasul %1$d</string>
+    <string name="instruction_enter_key">Lipiți cheia API mai jos:</string>
+    <string name="note_api_key">Țineți minte că poate dura până la două ore ca cheia dvs. să fie activată.</string>
+</resources>
