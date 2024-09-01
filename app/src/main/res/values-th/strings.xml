@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ปลั๊กอิน Kvaesitso สำหรับ OpenWeatherMap</string>
-    <string name="plugin_package_name">การเชื่อมต่อกับ OpenWeatherMap</string>
+    <string name="plugin_package_name">ตัวเชื่อมต่อกับ OpenWeatherMap</string>
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="plugin_description">เพิ่มข้อมูลสภาพอากาศจาก OpenWeatherMap</string>
     <string name="plugin_state_setup_required">ระบุ API key ของ OpenWeatherMap เพื่อใช้ปลั๊กอินนี้</string>
@@ -10,4 +10,8 @@
     <string name="api_key_state_saved">อัพเดต API key เรียบร้อยแล้ว</string>
     <string name="api_key_state_invalid">API key ที่ระบุไม่ถูกต้อง</string>
     <string name="api_key_state_error">เกิดข้อผิดพลาด กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ</string>
+    <string name="setup_step_n">ขั้นตอนที่ %1$d</string>
+    <string name="instruction_register">ลงทะเบียนกับ %1$s เพื่อรับ API key:</string>
+    <string name="instruction_enter_key">วาง API key ด้านล่าง:</string>
+    <string name="note_api_key">หมายเหตุ: API key ของคุณจะถูกเปิดใช้งานภายในเวลาไม่เกิน 2 ชั่วโมง</string>
 </resources>
