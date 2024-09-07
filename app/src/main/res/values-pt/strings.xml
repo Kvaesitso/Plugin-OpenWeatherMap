@@ -10,4 +10,8 @@
     <string name="api_key_save_button">Guardar</string>
     <string name="api_key_state_saved">A chave API foi atualizada com sucesso.</string>
     <string name="api_key_state_invalid">A chave API indicada não é valida.</string>
+    <string name="setup_step_n">Passo %1$d</string>
+    <string name="instruction_register">Registe-se em %1$s para obter uma chave API:</string>
+    <string name="instruction_enter_key">Cole a chave API aqui:</string>
+    <string name="note_api_key">Tenha em atenção de que pode levar até 2 horas para a sua chave ficar ativa.</string>
 </resources>
