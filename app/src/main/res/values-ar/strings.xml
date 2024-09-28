@@ -1,2 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">إضافة Kvaesitso ل ”OpenWeatherMap“</string>
+    <string name="plugin_package_name">دمج OpenWeatherMap</string>
+    <string name="plugin_name">خريطة الطقس المفتوح OpenWeatherMap</string>
+    <string name="plugin_description">إضافة OpenWeatherMap كمزود خدمة الطقس</string>
+    <string name="plugin_state_setup_required">أضف مفتاح OpenWeatherMap API لاستخدام هذه الإضافة.</string>
+    <string name="input_api_key">مفتاح واجهة برمجة التطبيقات (API)</string>
+    <string name="api_key_save_button">حفظ</string>
+    <string name="api_key_state_saved">تم تحديث مفتاح API بنجاح.</string>
+    <string name="api_key_state_invalid">مفتاح API المقدم غير صالح.</string>
+</resources>
