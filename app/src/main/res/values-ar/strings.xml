@@ -9,4 +9,6 @@
     <string name="api_key_save_button">حفظ</string>
     <string name="api_key_state_saved">تم تحديث مفتاح API بنجاح.</string>
     <string name="api_key_state_invalid">مفتاح API المقدم غير صالح.</string>
+    <string name="setup_step_n">خطوة %1$d</string>
+    <string name="api_key_state_error">حدث خطأ، يرجى التحقق من اتصال الشبكة لديك.</string>
 </resources>
