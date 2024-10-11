@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="plugin_package_name">Integrasi OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Menambahkan OpenWeatherMap sebagai penyedia cuaca</string>
+    <string name="input_api_key">kunci API</string>
+    <string name="app_name">Plugin Kvaesitso untuk OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Tambahkan kunci API OpenWeatherMap untuk menggunakan plugin ini.</string>
+</resources>
