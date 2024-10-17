@@ -11,4 +11,7 @@
     <string name="api_key_state_invalid">مفتاح API المقدم غير صالح.</string>
     <string name="setup_step_n">خطوة %1$d</string>
     <string name="api_key_state_error">حدث خطأ، يرجى التحقق من اتصال الشبكة لديك.</string>
+    <string name="instruction_register">قم بالتسجيل في %1$s للحصول على مفتاح API:</string>
+    <string name="instruction_enter_key">الصق مفتاح API أدناه:</string>
+    <string name="note_api_key">يرجى ملاحظة أن تفعيل مفتاحك قد يستغرق ما يصل إلى ساعتين.</string>
 </resources>
