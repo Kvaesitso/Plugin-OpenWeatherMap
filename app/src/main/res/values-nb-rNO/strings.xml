@@ -10,4 +10,8 @@
     <string name="api_key_state_saved">API-nøkkel er oppdatert.</string>
     <string name="api_key_state_invalid">API-nøkkelen er ikke gyldig.</string>
     <string name="api_key_state_error">En feil oppstod, sjekk din nettverkstilkobling.</string>
+    <string name="setup_step_n">Steg %1$d</string>
+    <string name="instruction_register">Registrer på %1$s for å få en API-nøkkel:</string>
+    <string name="instruction_enter_key">Lim inn API-nøkkel under:</string>
+    <string name="note_api_key">Merk at det kan ta opp mot 2 timer før nøkkelen din aktiveres.</string>
 </resources>
