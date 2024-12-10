@@ -13,4 +13,5 @@
     <string name="instruction_register">Inscrivez-vous sur %1$s pour obtenir une clé API :</string>
     <string name="instruction_enter_key">Collez la clé API ci-dessous :</string>
     <string name="note_api_key">Veuillez noter que l\'activation de votre clé peut prendre jusqu\'à 2 heures.</string>
+    <string name="setup_step_n">Étape %1$d</string>
 </resources>
