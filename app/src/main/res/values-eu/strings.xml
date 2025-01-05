@@ -4,4 +4,12 @@
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="input_api_key">API gakoa</string>
     <string name="api_key_save_button">Gorde</string>
+    <string name="setup_step_n">%1$d. pausua</string>
+    <string name="instruction_enter_key">API gakoa behean itsatsi:</string>
+    <string name="note_api_key">Kontuan izan 2 ordu arte igaro daitezkeela zure gakoa aktibatzeko.</string>
+    <string name="instruction_register">%1$s-(e)n erregistratu API gako bat lortzeko:</string>
+    <string name="plugin_state_setup_required">OpenWeatherMap API gako bat konfiguratu gehigarri hau erabiltzeko.</string>
+    <string name="api_key_state_saved">API gakoa ongi eguneratu da.</string>
+    <string name="api_key_state_invalid">Sartutako API gakoa ez da baliozkoa.</string>
+    <string name="api_key_state_error">Errore bat gertatu da, mesedez zure internet konexioa egiaztatu.</string>
 </resources>
