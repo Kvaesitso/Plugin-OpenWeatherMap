@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="note_api_key">Калі ласка, майце на ўвазе, что актывацыя ключа можа заняць да 2 гадзін.</string>
+    <string name="app_name">Плагін Kvaesitso для OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Дадайце ключ API OpenWeatherMap, каб карыстацца гэтым плагінам.</string>
+    <string name="api_key_state_error">Паўстала памылка, калі ласка, праверце ваша падлучэнне.</string>
+    <string name="plugin_package_name">Інтэграцыя OpenWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">Дадае OpenWeatherMap як правайдара надвор\'я</string>
+    <string name="input_api_key">Ключ API</string>
+    <string name="api_key_save_button">Захаваць</string>
+    <string name="api_key_state_saved">Ключ API быў абноўлены.</string>
+    <string name="api_key_state_invalid">Дадзены ключ API няправільны.</string>
+    <string name="setup_step_n">Крок %1$d</string>
+    <string name="instruction_register">Зарэгіструйцеся на %1$s, каб атрымаць ключ API:</string>
+    <string name="instruction_enter_key">Устаўце ключ API ніжэй:</string>
+</resources>
