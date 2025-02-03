@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="setup_step_n">步驟 %1$d</string>
+    <string name="instruction_register">在 %1$s 註冊以獲得 API 金鑰:</string>
+    <string name="instruction_enter_key">在下方貼上 API 金鑰:</string>
+    <string name="app_name">適用於 OpenWeatherMap 的 Kvaesitso 外掛程式</string>
+    <string name="plugin_package_name">OpenWeatherMap 整合</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">新增 OpenWeatherMap 作為天氣服務商</string>
+    <string name="note_api_key">請注意，啟用您的金鑰可能最多需要 2 個小時。</string>
+    <string name="plugin_state_setup_required">新增一個 OpenWeatherMap API 金鑰來使用此外掛程式。</string>
+    <string name="input_api_key">API 金鑰</string>
+    <string name="api_key_save_button">儲存</string>
+    <string name="api_key_state_saved">API 金鑰已成功更新。</string>
+    <string name="api_key_state_invalid">提供的 API 金鑰無效。</string>
+    <string name="api_key_state_error">發生錯誤，請檢查您的網路連接。</string>
+</resources>
