@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">OpenWeatherMap için Kvaesitso Eklentisi</string>
+    <string name="plugin_package_name">OpenWeatherMap entegrasyonu</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">OpenWeatherMap\'i hava durumu sağlayıcısı olarak ekler</string>
+    <string name="plugin_state_setup_required">Bu eklentiyi kullanabilmek için bir OpenWeatherMap API anahtarı ekleyin.</string>
+    <string name="input_api_key">API anahtarı</string>
+    <string name="api_key_save_button">Kaydet</string>
+    <string name="api_key_state_invalid">Girdiğiniz API anahtarı geçersiz.</string>
+    <string name="api_key_state_error">Bir hata oluştu, lütfen internet bağlantınızı kontrol edin.</string>
+    <string name="instruction_enter_key">API anahtarını aşağıya yapıştırın:</string>
+    <string name="api_key_state_saved">API anahtarı başarıyla güncellendi.</string>
+    <string name="instruction_register">Bir API anahtarı almak için %1$s üzerinden kayıt olun:</string>
+    <string name="setup_step_n">Adım %1$d</string>
+    <string name="note_api_key">API anahtarınızın aktifleştirilmesi 2 saate kadar sürebilir.</string>
+</resources>
