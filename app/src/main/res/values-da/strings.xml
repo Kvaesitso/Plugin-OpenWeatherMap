@@ -10,4 +10,8 @@
     <string name="api_key_state_error">En fejl opstod; tjek venligst din internetforbindelse.</string>
     <string name="plugin_package_name">OpenWeatherMap-integration</string>
     <string name="plugin_description">Tilføjer OpenWeatherApp som vejr-udbyder</string>
+    <string name="setup_step_n">Trin %1$d</string>
+    <string name="instruction_register">Tilmeld dig på %1$s for at få en API-nøgle:</string>
+    <string name="instruction_enter_key">Indsæt API-nøglen nedenfor:</string>
+    <string name="note_api_key">Bemærk, at det kan tage op til 2 timer, før din nøgle er aktiveret.</string>
 </resources>
