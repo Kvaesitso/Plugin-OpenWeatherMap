@@ -10,4 +10,8 @@
     <string name="api_key_save_button">Desa</string>
     <string name="api_key_state_saved">Clau API s\'ha actualitzat correctament.</string>
     <string name="api_key_state_error">S\'ha produït un error, comproveu la vostra connexió de xarxa.</string>
+    <string name="setup_step_n">Pas %1$d</string>
+    <string name="instruction_register">Registreu-vos a %1$s per obtenir una clau API:</string>
+    <string name="instruction_enter_key">Enganxeu la clau de l\'API a continuació:</string>
+    <string name="note_api_key">Tingueu en compte que la clau pot tardar fins a 2 hores a activar-se.</string>
 </resources>
