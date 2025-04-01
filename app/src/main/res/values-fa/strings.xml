@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">افزونه Kvaesitso برای OpenWeatherMap</string>
+    <string name="plugin_package_name">بکپارچگی نقشه آب و هوا آزاد</string>
+    <string name="plugin_name">نقشه آب و هوا آزاد(OpenWeatherMap)</string>
+    <string name="plugin_description">نقشه آب و هوا آزاد را در جایگاه ارائه دهنده آب و هوا می‌افزاید</string>
+    <string name="plugin_state_setup_required">یک کلید OpenWeatherMap API برای به‌کارگیری این افزونه بیفزایید.</string>
+    <string name="input_api_key">کلید API</string>
+    <string name="api_key_save_button">نگه‌داری</string>
+    <string name="api_key_state_saved">کلید API با موفقیت به‌روزرسانی شد.</string>
+    <string name="api_key_state_invalid">کلید API داده شده درست نیست.</string>
+    <string name="api_key_state_error">ایرادی رخ داده، لطفاً شبکه‌تان را بررسی کنید.</string>
+    <string name="setup_step_n">گام %1$d</string>
+    <string name="instruction_register">برای گرفتن کلید AI، در %1$s ثبت‌نام کنید:</string>
+    <string name="instruction_enter_key">کلید API را پایین جای‌گذاری کنید:</string>
+    <string name="note_api_key">توجه کنید که روشن شدن کلید شما می‌تواند تا 2 ساعت زمان ببرد.</string>
+</resources>
