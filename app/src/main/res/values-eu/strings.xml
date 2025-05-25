@@ -12,4 +12,6 @@
     <string name="api_key_state_saved">API gakoa ongi eguneratu da.</string>
     <string name="api_key_state_invalid">Sartutako API gakoa ez da baliozkoa.</string>
     <string name="api_key_state_error">Errore bat gertatu da, mesedez zure internet konexioa egiaztatu.</string>
+    <string name="app_name">Kvaesitso plugina OpenWeatherMap-erako</string>
+    <string name="plugin_description">OpenWeatherMap gehitzen du eguraldi hornitzaile gisa</string>
 </resources>
