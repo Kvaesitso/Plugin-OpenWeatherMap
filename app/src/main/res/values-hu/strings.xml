@@ -7,8 +7,8 @@
     <string name="api_key_save_button">Mentés</string>
     <string name="api_key_state_saved">Az API-kulcs sikeresen frissült.</string>
     <string name="api_key_state_invalid">A megadott API-kulcs nem érvényes.</string>
-    <string name="app_name">Kvaesitso bővítmény az OpenWeatherMap-hez</string>
-    <string name="plugin_description">OpenWeatherMap hozzáadása, mint időjárás-előrejelzés szolgáltató</string>
+    <string name="app_name">Kvaesitso bővítmény az OpenWeatherMaphez</string>
+    <string name="plugin_description">OpenWeatherMap hozzáadása, mint időjáráselőrejelzési szolgáltató</string>
     <string name="api_key_state_error">Hiba történt, kérjük, ellenőrizd a hálózati kapcsolatot.</string>
     <string name="instruction_enter_key">Másolja be az API-kulcsot:</string>
     <string name="instruction_register">Regisztráljon a(z) %1$s oldalon, hogy megkapja az API-kulcsot:</string>
