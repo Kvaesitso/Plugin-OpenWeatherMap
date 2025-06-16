@@ -1,2 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="app_name">תוסף Kvaesitso ל-OpenWeatherMap</string>
+    <string name="plugin_package_name">אינטגרציית OneWeatherMap</string>
+</resources>
