@@ -10,7 +10,7 @@
     <string name="setup_step_n">Passo %1$d</string>
     <string name="instruction_register">Registre-se em %1$s para conseguir uma chave API:</string>
     <string name="instruction_enter_key">Cole a chave API abaixo:</string>
-    <string name="api_key_state_invalid">A chave API provida não é válida.</string>
+    <string name="api_key_state_invalid">A chave API fornecida não é válida.</string>
     <string name="plugin_description">Adiciona o OpenWeatherMap como o provedor de clima</string>
     <string name="plugin_package_name">Integração ao OpenWeatherMap</string>
     <string name="note_api_key">Por favor note que pode levar até 2 horas para sua chave ser ativada.</string>
