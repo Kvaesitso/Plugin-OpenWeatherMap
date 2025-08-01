@@ -6,4 +6,7 @@
     <string name="input_api_key">kunci API</string>
     <string name="app_name">Plugin Kvaesitso untuk OpenWeatherMap</string>
     <string name="plugin_state_setup_required">Tambahkan kunci API OpenWeatherMap untuk menggunakan plugin ini.</string>
+    <string name="api_key_save_button">Simpan</string>
+    <string name="api_key_state_saved">Kunci API telah berhasil diperbarui.</string>
+    <string name="instruction_enter_key">Tempelkan Kunci API dibawah:</string>
 </resources>
