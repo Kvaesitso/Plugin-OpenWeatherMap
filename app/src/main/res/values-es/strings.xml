@@ -10,4 +10,8 @@
     <string name="api_key_state_saved">La clave API ha sido actualizada correctamente.</string>
     <string name="api_key_state_invalid">La clave API provista no es válida.</string>
     <string name="api_key_state_error">Ha ocurrido un error, por favor comprueba tu conexión de red.</string>
+    <string name="setup_step_n">Paso %1$d</string>
+    <string name="instruction_register">Regístrate en %1$s para obtener una clave API:</string>
+    <string name="instruction_enter_key">Pega la clave API debajo:</string>
+    <string name="note_api_key">Ten en cuenta que la activación de tu clave puede demorar hasta 2 horas.</string>
 </resources>
