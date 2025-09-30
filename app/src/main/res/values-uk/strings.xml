@@ -2,4 +2,11 @@
 <resources>
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="input_api_key">API-ключ</string>
+    <string name="app_name">Плагін Kvaesitso для OpenWeatherMap</string>
+    <string name="plugin_package_name">Інтеграція OpenWeatherMap</string>
+    <string name="plugin_state_setup_required">Додайте API-ключ OpenWeatherMap, щоб використовувати цей плагін.</string>
+    <string name="api_key_save_button">Зберегти</string>
+    <string name="api_key_state_saved">Ключ API успішно оновлено.</string>
+    <string name="api_key_state_invalid">Наданий ключ API не є дійсним.</string>
+    <string name="api_key_state_error">Виникла помилка, будь ласка, перевірте підключення до мережі.</string>
 </resources>
