@@ -9,4 +9,8 @@
     <string name="api_key_state_saved">Ключ API успішно оновлено.</string>
     <string name="api_key_state_invalid">Наданий ключ API не є дійсним.</string>
     <string name="api_key_state_error">Виникла помилка, будь ласка, перевірте підключення до мережі.</string>
+    <string name="plugin_description">Додає OpenWeatherMap як постачальника інформації про погоду</string>
+    <string name="setup_step_n">Крок %1$d</string>
+    <string name="instruction_enter_key">Вставте ключ API нижче:</string>
+    <string name="instruction_register">Зареєструйтеся на %1$s, щоб отримати ключ API:</string>
 </resources>
