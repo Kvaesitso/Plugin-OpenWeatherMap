@@ -13,4 +13,5 @@
     <string name="setup_step_n">Крок %1$d</string>
     <string name="instruction_enter_key">Вставте ключ API нижче:</string>
     <string name="instruction_register">Зареєструйтеся на %1$s, щоб отримати ключ API:</string>
+    <string name="note_api_key">Зверніть увагу, що активація ключа може зайняти до 2 годин.</string>
 </resources>
