@@ -4,8 +4,8 @@
     <string name="plugin_package_name">Integración con OpenWeatherMap</string>
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="plugin_description">Agregar OpenWeatherMap como proveedor de clima</string>
-    <string name="plugin_state_setup_required">Agregar una clave del API de OpenWeatherMap para usar este plugin.</string>
-    <string name="input_api_key">Clave API</string>
+    <string name="plugin_state_setup_required">Agregar una clave de la API de OpenWeatherMap para usar este plugin.</string>
+    <string name="input_api_key">Clave de la API</string>
     <string name="api_key_save_button">Guardar</string>
     <string name="api_key_state_saved">La clave API ha sido actualizada correctamente.</string>
     <string name="api_key_state_invalid">La clave API provista no es válida.</string>
