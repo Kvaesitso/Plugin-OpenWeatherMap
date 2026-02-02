@@ -2,4 +2,7 @@
 <resources>
     <string name="app_name">תוסף Kvaesitso ל-OpenWeatherMap</string>
     <string name="plugin_package_name">אינטגרציית OneWeatherMap</string>
+    <string name="plugin_name">OpenWeatherMap</string>
+    <string name="plugin_description">הוספת OpenWeatherMap כספק של שירותי מזג-אוויר</string>
+    <string name="plugin_state_setup_required">הוספת מפתח גישת API של OpenWeatherMap לשימוש בתוסף זה.</string>
 </resources>
