@@ -5,4 +5,7 @@
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="plugin_description">הוספת OpenWeatherMap כספק של שירותי מזג-אוויר</string>
     <string name="plugin_state_setup_required">הוספת מפתח גישת API של OpenWeatherMap לשימוש בתוסף זה.</string>
+    <string name="input_api_key">מפתח גישה של API</string>
+    <string name="api_key_save_button">שמירה</string>
+    <string name="api_key_state_saved">מפתח הגישה של API עודכן בהצלחה.</string>
 </resources>
