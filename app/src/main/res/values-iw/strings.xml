@@ -10,4 +10,6 @@
     <string name="api_key_state_saved">מפתח הגישה של API עודכן בהצלחה.</string>
     <string name="api_key_state_invalid">מפתח הגישה של API שסופק איננו תקף.</string>
     <string name="api_key_state_error">אירעה שגיאה, אנא בידקו את חיבור הרשת שלכם.</string>
+    <string name="setup_step_n">שלב %1$d</string>
+    <string name="instruction_register">הרשמה ב-%1$s לקבלת מפתח גישה של API:</string>
 </resources>
