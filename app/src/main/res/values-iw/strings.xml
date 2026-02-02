@@ -8,4 +8,6 @@
     <string name="input_api_key">מפתח גישה של API</string>
     <string name="api_key_save_button">שמירה</string>
     <string name="api_key_state_saved">מפתח הגישה של API עודכן בהצלחה.</string>
+    <string name="api_key_state_invalid">מפתח הגישה של API שסופק איננו תקף.</string>
+    <string name="api_key_state_error">אירעה שגיאה, אנא בידקו את חיבור הרשת שלכם.</string>
 </resources>
