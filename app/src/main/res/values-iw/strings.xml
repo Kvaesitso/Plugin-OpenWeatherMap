@@ -13,4 +13,5 @@
     <string name="setup_step_n">שלב %1$d</string>
     <string name="instruction_register">הרשמה ב-%1$s לקבלת מפתח גישה של API:</string>
     <string name="instruction_enter_key">הדבקת מפתח הגישה של API למטה:</string>
+    <string name="note_api_key">נא לשים לב שייתכן וייקח עד שעתיים למפתח שלך להיות מופעל.</string>
 </resources>
