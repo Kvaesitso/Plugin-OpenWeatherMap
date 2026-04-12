@@ -1,18 +1,17 @@
 plugins {
     alias(libs.plugins.androidApplication)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.serialization)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
     namespace = "de.mm20.launcher2.plugin.openweathermap"
-    compileSdk = 34
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "de.mm20.launcher2.plugin.openweathermap"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 37
         versionCode = 4
         versionName = "1.0.3"
 
@@ -21,22 +20,15 @@ android {
 
     buildTypes {
         release {
-            postprocessing {
-                isRemoveUnusedCode = true
-                isObfuscate = false
-                isOptimizeCode = true
-                proguardFiles(
-                    "proguard-rules.pro"
-                )
-            }
+            proguardFiles(
+                getDefaultProguardFile("proguard-android-optimize.txt"),
+                "proguard-rules.pro"
+            )
         }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
     }
     buildFeatures {
         compose = true
