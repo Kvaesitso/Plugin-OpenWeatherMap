@@ -9,12 +9,12 @@ import de.mm20.launcher2.plugin.openweathermap.api.OwmWeather
 import de.mm20.launcher2.sdk.PluginState
 import de.mm20.launcher2.sdk.weather.Forecast
 import de.mm20.launcher2.sdk.weather.K
-import de.mm20.launcher2.sdk.weather.WeatherIcon
 import de.mm20.launcher2.sdk.weather.WeatherLocation
 import de.mm20.launcher2.sdk.weather.WeatherProvider
 import de.mm20.launcher2.sdk.weather.hPa
 import de.mm20.launcher2.sdk.weather.m_s
 import de.mm20.launcher2.sdk.weather.mm
+import de.mm20.launcher2.weather.WeatherIcon
 import kotlinx.coroutines.flow.first
 import java.util.Locale
 import kotlin.math.roundToInt
@@ -107,11 +107,11 @@ class OpenWeatherMapWeatherProvider : WeatherProvider(
             icon = iconForId(weather.weather.firstOrNull()?.id ?: return null),
             clouds = weather.clouds?.all?.roundToInt(),
             windSpeed = weather.wind?.speed?.m_s,
-            windDirection = weather.wind?.deg ?: -1.0,
+            windDirection = weather.wind?.deg,
             night = run {
                 val sunrise = weather.sys?.sunrise ?: 0
                 val sunset = weather.sys?.sunset ?: 0
-                weather.dt > sunset || weather.dt < sunrise
+                weather.dt !in sunrise..sunset
             },
             location = location,
             provider = context.getString(R.string.plugin_name),
@@ -150,26 +150,19 @@ class OpenWeatherMapWeatherProvider : WeatherProvider(
 
     private fun iconForId(id: Int): WeatherIcon {
         return when (id) {
-            200, 201, in 230..232 -> WeatherIcon.ThunderstormWithRain
-            202 -> WeatherIcon.ThunderstormWithRain
-            210, 211 -> WeatherIcon.Thunderstorm
-            212, 221 -> WeatherIcon.HeavyThunderstorm
-            in 300..302, in 310..312 -> WeatherIcon.Drizzle
-            313, 314, 321, in 500..504, 511, in 520..522, 531 -> WeatherIcon.Showers
+            200, 201, 202, in 230..232 -> WeatherIcon.Thunderstorm
+            210, 211, 212, 221 -> WeatherIcon.Thunder
+            in 300..302, in 310..312, 500, 520 -> WeatherIcon.LightRain
+            313, 314, 321, 501, 511, 521, 531 -> WeatherIcon.Rain
+            502, 503, 504, 522 -> WeatherIcon.HeavyRain
             in 600..602 -> WeatherIcon.Snow
             611, 612, 615, 616, in 620..622 -> WeatherIcon.Sleet
-            701, 711, 731, 741, 761, 762 -> WeatherIcon.Fog
-            721 -> WeatherIcon.Haze
-            771, 781, in 900..902, in 958..962 -> WeatherIcon.Storm
+            701, 711, 741 -> WeatherIcon.Fog
+            721, 731, 751, 761, 762 -> WeatherIcon.Haze
+            771, 781 -> WeatherIcon.Wind
             800 -> WeatherIcon.Clear
-            801 -> WeatherIcon.PartlyCloudy
-            802 -> WeatherIcon.MostlyCloudy
-            803 -> WeatherIcon.BrokenClouds
-            804, 951 -> WeatherIcon.Cloudy
-            903 -> WeatherIcon.Cold
-            904 -> WeatherIcon.Hot
-            905, in 952..957 -> WeatherIcon.Wind
-            906 -> WeatherIcon.Hail
+            801, 802, 803 -> WeatherIcon.PartlyCloudy
+            804-> WeatherIcon.Overcast
             else -> WeatherIcon.Unknown
         }
     }
