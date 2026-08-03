@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="note_api_key">Майце на ўвазе, што актывацыя ключа можа заняць да 2 гадзін.</string>
-    <string name="app_name">Убудова Kvaesitso для OpenWeatherMap</string>
+    <string name="app_name">Убудова OpenWeatherMap для Kvaesitso</string>
     <string name="plugin_state_setup_required">Дадайце ключ API OpenWeatherMap, каб карыстацца гэтай убудовай.</string>
-    <string name="api_key_state_error">Паўстала памылка, праверце ваша падключэнне да сеткі.</string>
+    <string name="api_key_state_error">Узнікла памылка, праверце ваша падключэнне да сеткі.</string>
     <string name="plugin_package_name">Інтэграцыя OpenWeatherMap</string>
     <string name="plugin_name">OpenWeatherMap</string>
     <string name="plugin_description">Дадае OpenWeatherMap як пастаўшчыка надвор\'я</string>
